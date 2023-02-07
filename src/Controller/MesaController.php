@@ -15,7 +15,7 @@ use App\Entity\Mesa;
  */
 class MesaController extends AbstractController
 {
-    #[Route('/mesa', name: 'app_mesa')]
+    #[Route('/mesa2', name: 'app_mesa')]
     public function index(): JsonResponse
     {
         return $this->json([
@@ -25,7 +25,7 @@ class MesaController extends AbstractController
     }
 
     /**
-    * @Route("/mesaTodos", name="project_index", methods={"GET"})
+    * @Route("/mesa", name="project_index", methods={"GET"})
     */
     public function select(ManagerRegistry $doctrine): Response
     {
@@ -49,7 +49,7 @@ class MesaController extends AbstractController
     }
 
     /**
-     * @Route("/mesaNueva", name="project_new", methods={"POST"})
+     * @Route("/mesa", name="project_new", methods={"POST"})
      */
     public function new(ManagerRegistry $doctrine, Request $request): Response
     {
@@ -92,7 +92,7 @@ class MesaController extends AbstractController
     }
 
     /**
-     * @Route("/mesaEditar/{id}", name="project_edit", methods={"PUT"})
+     * @Route("/mesa/{id}", name="project_edit", methods={"PUT"})
      */
     public function edit(ManagerRegistry $doctrine, Request $request, int $id): Response
     {
@@ -121,7 +121,7 @@ class MesaController extends AbstractController
     }
 
     /**
-     * @Route("/mesaBorrar/{id}", name="project_delete", methods={"DELETE"})
+     * @Route("/mesa/{id}", name="project_delete", methods={"DELETE"})
      */
     public function delete(ManagerRegistry $doctrine, int $id): Response
     {
