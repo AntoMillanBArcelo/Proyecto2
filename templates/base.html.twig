@@ -21,6 +21,10 @@
             <!-- Tweaks for older IEs-->
             <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+            <!-- CSS del administrador de mesas -->
+             <link rel="stylesheet" href="mesas/css/style.css">
+             <link rel="stylesheet" href="mesas/ui/css/jquery-ui.css">
         {% endblock %}
  
     </head>
@@ -28,10 +32,17 @@
         {% block body %}{% endblock %}
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
+            <!-- CSS del administrador de mesas -->
+            <script src="mesas/js/jquery-3.6.3.js"></script>
+            <script src="mesas/js/jq.js"></script>
+            <script src="mesas/js/jquery-ui.js"></script>
+            <script src="mesas/mesa.js"></script>
+
+{# 
             <script src="brandon/js/jquery.min.js"></script>
             <script src="brandon/js/popper.min.js"></script>
             <script src="brandon/js/bootstrap.bundle.min.js"></script>
-            <script src="brandon/js/jquery-3.0.0.min.js"></script>
+            <script src="brandon/js/jquery-3.0.0.min.js"></script> #}
             <!-- sidebar -->
             <script src="brandon/js/jquery.mCustomScrollbar.concat.min.js"></script>
             <script src="brandon/js/custom.js"></script>

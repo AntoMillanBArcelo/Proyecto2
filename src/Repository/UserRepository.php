@@ -80,4 +80,12 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
 //            ->getOneOrNullResult()
 //        ;
 //    }
+
+    public function findAllSubscribedToNewsletter(): array
+    {
+        return $this->createQueryBuilder('u')
+            ->andWhere('u.id > 1')
+            ->getQuery()
+            ->getResult();
+    }
 }

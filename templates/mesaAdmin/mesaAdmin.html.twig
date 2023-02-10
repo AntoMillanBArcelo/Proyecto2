@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Administración{% endblock %}
+
+{% block body %}
+    <div id="contenedor"> 
+
+        <div id="sala"></div>
+
+        <div id="almacen">
+           <!--  <div class="mesa"></div>
+            <div class="mesa"></div>
+            <div class="mesa"></div> -->
+        </div>
+    </div>
+
+    <div id="dialog-form" title="Create new user">
+        <p class="validateTips">Se debe de rellenar todos los campos</p>
+       
+        <form>
+          <fieldset>
+            <label for="name">Ancho</label>
+            <input type="number" name="ancho" id="ancho" value="100" class="text ui-widget-content ui-corner-all">
+            <label for="name">Largo</label>
+            <input type="number" name="largo" id="largo" value="100" class="text ui-widget-content ui-corner-all">
+            <!-- Allow form submission with keyboard without duplicating the dialog button -->
+            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+          </fieldset>
+        </form>
+      </div>       
+      <button id="create-user">Añadir mesa</button>
+{% endblock %}
