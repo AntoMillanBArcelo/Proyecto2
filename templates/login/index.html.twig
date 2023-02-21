@@ -8,6 +8,11 @@
         <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
 
+     <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="brandon/images/loading.gif" alt="#" /></div>
+      </div>
+
   {#   <form action="{{ path('app_login') }}" method="post">
         <label for="username">Email:</label>
         <input type="text" id="username" name="_username" value="{{ last_username }} " class="contactus">

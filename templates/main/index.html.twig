@@ -5,9 +5,9 @@
 {% block body %}
 <body class="main-layout">
       <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="brandon/images/loading.gif" alt="#" /></div>
-      </div>
+      {# <div class="loader_bg">
+         <div class="loader"><img src="brandon/images/loading-unscreen.gif" alt="#" /></div>
+      </div> #}
       <!-- end loader -->
       <div id="mySidepanel" class="sidepanel">
          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -16,7 +16,9 @@
          <a href="classes.html">Classes</a>
          <a href="testimonials.html">Testimonials</a>
          <a href="/mesaAdmin">Administración de mesas</a>
+         <a href="/admin">Base de datos</a>
       </div>
+
       <!-- header -->
       <header>
          <!-- header inner -->
@@ -26,59 +28,62 @@
                   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                      <div class="full">
                         <div class="center-desk">
-                           <div class="brandon/images/logo.png">
+                           <div class="logo">
                               <a href="index.html"><img src="brandon/images/logo.png" alt="#" /></a>
                            </div>
                         </div>
                      </div>
+                     
                   </div>
-                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9" id="menuitem">
                      <div class="right_bottun">
                         <a class="login" href="/login">Login</a>
                         <a class="login" href="/register">Register</a>
-                        <button class="openbtn" onclick="openNav()"><img src="brandon/images/menu_icon.png" alt="#"/> </button> 
+                        <button class="openbtn" onclick="openNav()">PERFIL<img src="brandon/images/usuario.png" alt="#"/> </button> 
                      </div>
-                     
                   </div>
                </div>
             </div>
          </div>
       </header>
+      
+
       <!-- end header inner -->
       <!-- end header -->
       <!-- banner -->
       <section class="banner_main">
-        
+             {#   <div class="evento">
+               <div class="container">
+                  <div class="row gx-3 ">
+                     <div class="col-md-6">
+                        <img src="brandon/images/Captura.PNG" alt="#"/>
+                     </div>
+                     <div class="col-md-6">
+                     <h2>evento</h2>
+                     <p>sadsadasdasdsadsa<p>
+                     </div>
+                  </div>
+               </div>
+            </div> #}
+
          </div>
       </section>
       <!-- end banner -->
       <!-- about section -->
-      <div class="evento">
-         <div class="container">
-            <div class="row gx-3 ">
-               <div class="col-md-6">
-                  <img src="brandon/images/Captura.PNG" alt="#"/>
-               </div>
-               <div class="col-md-6">
-                 <h2>evento</h2>
-                 <p>sadsadasdasdsadsa<p>
-               </div>
-            </div>
-         </div>
-      </div>
+     
       
       <div id="about" class="about afbecros">
-         <div class="container">
-            <div class="row ">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Información</h2>
-                     <figure class="card"><img src="brandon/images/Captura.PNG" alt="#"/></figure>
-                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores quam voluptates aliquam cum vel ab sed rem esse ipsam? Quod quasi beatae natus soluta reprehenderit dicta ipsam nemo nesciunt excepturi.</p>
-                     <a class="read_more" href="#">Read More</a>
-                  </div>
-               </div>
+         <div class="container" id="abouut">
+            <div class="row">
+            <button class="categoria" id="categoriaEvento">EVENTO</button>
+               <figure class="card">
+                  <img src="brandon/images/pokemonT.jpg" alt="#"/>
+                  <h3>Evento: Presentación Pokémon TCG</h3>
+                  <p>20 de Mayo, 2023</p>
+                  <button class="categoriaaa" id="categoriaEvento"><img src="brandon/images/ellipsis.png" alt="#"/></button>
+               </figure>
             </div>
+            
          </div>
       </div>
       <!-- about section -->
